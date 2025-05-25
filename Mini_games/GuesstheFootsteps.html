@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>👟 Guess the Footsteps</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>👟 Guess the Footsteps</h1>
+      <p>Listen carefully and guess what surface the footsteps are on!</p>
+      <button onclick="playFootstep()">▶️ Play Footstep</button>
+
+      <div id="choices">
+        <button onclick="checkAnswer('sand')">Sand</button>
+        <button onclick="checkAnswer('water')">Water</button>
+        <button onclick="checkAnswer('wood')">Wood</button>
+        <button onclick="checkAnswer('metal')">Metal</button>
+      </div>
+
+      <p id="feedback"></p>
+      <p id="score">Score: 0</p>
+    </div>
+
+    <script src="scrypt.js"></script>
+  </body>
+</html>
